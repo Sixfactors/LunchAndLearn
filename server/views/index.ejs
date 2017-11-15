@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Lunch And Learn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+      <h1 class="text-center">Lunch And Learn</h1>
+    <div class="row">
+        <img id="img" class="img img-responsive" src="" />
+    </div>
+    <div class="input-group">
+      <input class="form-control" type="text" placeholder="Please paste in a image url" />
+      <button id="getImgBtn" class="btn btn-default">Get Image</button>
+      <button id="anaImgBtn" class="btn btn-info">Analyise Image</button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th>Confidence %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>33%</td>
+        </tr>
+        <tr>
+          <td>Jacob</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>the Bird</td>
+          <td>99.5%</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
+  <script src='/javascripts/index.js'></script>
 </html>

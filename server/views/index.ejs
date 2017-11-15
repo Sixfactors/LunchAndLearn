@@ -8,37 +8,32 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-      <h1 class="text-center">Lunch And Learn</h1>
-    <div class="row">
-        <img id="img" class="img img-responsive" src="" />
-    </div>
+    <h1 class="text-center">Lunch And Learn</h1>
     <div class="input-group">
-      <input class="form-control" type="text" placeholder="Please paste in a image url" />
+      <input id="imgUrlIp" class="form-control" type="text" placeholder="Please paste in a image url" />
       <button id="getImgBtn" class="btn btn-default">Get Image</button>
       <button id="anaImgBtn" class="btn btn-info">Analyise Image</button>
     </div>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Label</th>
-          <th>Confidence %</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>33%</td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>50%</td>
-        </tr>
-        <tr>
-          <td>the Bird</td>
-          <td>99.5%</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div class="col-md-6">
+        <img id="img" class="img img-responsive" src="" />
+      </div>
+      <div class="col-md-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Label</th>
+              <th>Confidence %</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src='/javascripts/index.js'></script>
 </html>
